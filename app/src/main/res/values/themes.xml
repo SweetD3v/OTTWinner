@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="Theme.OTTWinner" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ShapeableImageView50" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeableImageView8" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="MyProgressDialog" parent="@style/Theme.MaterialComponents.DayNight.Dialog">
+        <item name="dialogCornerRadius">8dp</item>
+        <item name="android:background">@drawable/rounded_bg_white_16</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+</resources>

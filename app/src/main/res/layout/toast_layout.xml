@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgToastColor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="#D50000"
+        app:layout_constraintBottom_toBottomOf="@id/llToast"
+        app:layout_constraintEnd_toEndOf="@id/llToast"
+        app:layout_constraintStart_toStartOf="@id/llToast"
+        app:layout_constraintTop_toTopOf="@id/llToast"
+        app:shapeAppearanceOverlay="@style/ShapeableImageView50" />
+
+    <LinearLayout
+        android:id="@+id/llToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="36dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/txtToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="center"
+            android:text="Task failed"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
