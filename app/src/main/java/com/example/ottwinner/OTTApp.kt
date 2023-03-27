@@ -57,9 +57,9 @@ class OTTApp : MultiDexApplication(), Application.ActivityLifecycleCallbacks {
     }
 
     override fun onActivityDestroyed(activity: Activity) {
-        Log.e("TAG", "onAppDestroyed: ")
-        TimerService.TIMER_CANCEL = true
-        val info = WorkManager.getInstance(this).getWorkInfosByTag("task1")
-        Log.e("TAG", "onActivityDestroyed: ${info.get()[0].state}")
+//        Log.e("TAG", "onAppDestroyed: ")
+//        TimerService.TIMER_CANCEL = true
+//        val info = WorkManager.getInstance(this).getWorkInfosByTag("task1")
+//        Log.e("TAG", "onActivityDestroyed: ${info.get()[0].state}")
     }
 }

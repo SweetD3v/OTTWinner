@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -55,8 +56,12 @@ dependencies {
     implementation "androidx.work:work-runtime-ktx:2.7.1"
 
     //Analytics & Database
-    implementation platform("com.google.firebase:firebase-bom:30.0.1")
+    implementation platform("com.google.firebase:firebase-bom:31.3.0")
     implementation "com.google.firebase:firebase-analytics"
     implementation "com.google.firebase:firebase-config"
     implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+
+    //Gmail Login
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
 }
